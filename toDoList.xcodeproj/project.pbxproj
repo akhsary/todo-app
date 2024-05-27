@@ -8,17 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		5BA675142C047CA000752836 /* toDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA675132C047CA000752836 /* toDoListApp.swift */; };
-		5BA675162C047CA000752836 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA675152C047CA000752836 /* ContentView.swift */; };
+		5BA675162C047CA000752836 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA675152C047CA000752836 /* MainView.swift */; };
 		5BA675182C047CA100752836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BA675172C047CA100752836 /* Assets.xcassets */; };
 		5BA6751B2C047CA100752836 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BA6751A2C047CA100752836 /* Preview Assets.xcassets */; };
+		5BA675292C047ECB00752836 /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA675282C047ECB00752836 /* ToDoModel.swift */; };
+		5BA6752C2C047FA500752836 /* CatFactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA6752B2C047FA500752836 /* CatFactService.swift */; };
+		5BA6752E2C04809100752836 /* AllTasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA6752D2C04809100752836 /* AllTasksView.swift */; };
+		5BA675302C0481AB00752836 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA6752F2C0481AB00752836 /* ContentView.swift */; };
+		5BA675322C0487F300752836 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA675312C0487F300752836 /* APIError.swift */; };
+		5BA675342C048E0100752836 /* CatFactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA675332C048E0100752836 /* CatFactViewModel.swift */; };
+		5BA675362C04916100752836 /* CatFactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA675352C04916100752836 /* CatFactModel.swift */; };
+		5BA6753A2C049F5C00752836 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA675392C049F5C00752836 /* TaskRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5BA675102C047CA000752836 /* toDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BA675132C047CA000752836 /* toDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoListApp.swift; sourceTree = "<group>"; };
-		5BA675152C047CA000752836 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5BA675152C047CA000752836 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5BA675172C047CA100752836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BA6751A2C047CA100752836 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5BA675282C047ECB00752836 /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
+		5BA6752B2C047FA500752836 /* CatFactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactService.swift; sourceTree = "<group>"; };
+		5BA6752D2C04809100752836 /* AllTasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTasksView.swift; sourceTree = "<group>"; };
+		5BA6752F2C0481AB00752836 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5BA675312C0487F300752836 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		5BA675332C048E0100752836 /* CatFactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactViewModel.swift; sourceTree = "<group>"; };
+		5BA675352C04916100752836 /* CatFactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactModel.swift; sourceTree = "<group>"; };
+		5BA675392C049F5C00752836 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +67,11 @@
 		5BA675122C047CA000752836 /* toDoList */ = {
 			isa = PBXGroup;
 			children = (
-				5BA675132C047CA000752836 /* toDoListApp.swift */,
-				5BA675152C047CA000752836 /* ContentView.swift */,
+				5BA675242C047CF400752836 /* App */,
+				5BA675222C047CA800752836 /* Views */,
+				5BA675232C047CA900752836 /* ViewModels */,
+				5BA6752A2C047F9500752836 /* Services */,
+				5BA675212C047CA600752836 /* Models */,
 				5BA675172C047CA100752836 /* Assets.xcassets */,
 				5BA675192C047CA100752836 /* Preview Content */,
 			);
@@ -65,6 +84,51 @@
 				5BA6751A2C047CA100752836 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5BA675212C047CA600752836 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5BA675282C047ECB00752836 /* ToDoModel.swift */,
+				5BA675312C0487F300752836 /* APIError.swift */,
+				5BA675352C04916100752836 /* CatFactModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5BA675222C047CA800752836 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5BA6752F2C0481AB00752836 /* ContentView.swift */,
+				5BA675152C047CA000752836 /* MainView.swift */,
+				5BA6752D2C04809100752836 /* AllTasksView.swift */,
+				5BA675392C049F5C00752836 /* TaskRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5BA675232C047CA900752836 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5BA675332C048E0100752836 /* CatFactViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5BA675242C047CF400752836 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5BA675132C047CA000752836 /* toDoListApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5BA6752A2C047F9500752836 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5BA6752B2C047FA500752836 /* CatFactService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +201,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BA675162C047CA000752836 /* ContentView.swift in Sources */,
+				5BA6753A2C049F5C00752836 /* TaskRowView.swift in Sources */,
+				5BA675362C04916100752836 /* CatFactModel.swift in Sources */,
+				5BA675292C047ECB00752836 /* ToDoModel.swift in Sources */,
+				5BA675302C0481AB00752836 /* ContentView.swift in Sources */,
+				5BA6752C2C047FA500752836 /* CatFactService.swift in Sources */,
+				5BA675342C048E0100752836 /* CatFactViewModel.swift in Sources */,
+				5BA6752E2C04809100752836 /* AllTasksView.swift in Sources */,
+				5BA675322C0487F300752836 /* APIError.swift in Sources */,
+				5BA675162C047CA000752836 /* MainView.swift in Sources */,
 				5BA675142C047CA000752836 /* toDoListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
