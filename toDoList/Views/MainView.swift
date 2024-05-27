@@ -27,7 +27,7 @@ struct MainView: View {
             Text("What'll do?")
                 .fontWeight(.semibold)
             
-            TextEditor(text: $textFieldTitle)
+            TextField("", text: $textFieldTitle)
                 .textFieldStyle(PlainTextFieldStyle())
                 .frame(height: 30)
                 .textFieldStyle(PlainTextFieldStyle())
@@ -57,6 +57,7 @@ struct MainView: View {
                         modelContext.insert(newTask)
                         textFieldTitle = ""
                         textFieldMain = ""
+                        isFocuced = false
                     }
                 }
             

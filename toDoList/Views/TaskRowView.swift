@@ -14,17 +14,24 @@ struct TaskRowView: View {
         ZStack {
             Rectangle()
                 .foregroundStyle(.yellow)
+            VStack {
+                HStack {
+                    Spacer()
+                    
+                    Button {
+                        modelContext.delete(toDo)
+                    } label: {
+                        Image(systemName:"xmark.bin.fill")
+                    }
+                }
+                Spacer()
+            }
+            .padding()
             VStack(alignment: .leading) {
                 Text(toDo.title)
                     .fontWeight(.semibold)
                 
                 Text(toDo.body)
-                
-                Button {
-                    modelContext.delete(toDo)
-                } label: {
-                    Image(systemName:"xmark.bin.fill")
-                }
             }
             .padding()
         }
@@ -32,8 +39,4 @@ struct TaskRowView: View {
         .padding()
     }
 }
-
-//#Preview {
-//    TaskRowView(toDo: )
-//}
 
