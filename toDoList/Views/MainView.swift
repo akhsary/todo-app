@@ -37,6 +37,11 @@ struct MainView: View {
                 .onSubmit() {
                     self.isFocuced = true
                 }
+                .onChange(of: textFieldTitle) { value in
+                        if value.last == "\n" {
+                            textFieldTitle = String(value.dropLast())
+                        }
+                    }
                 
             Divider()
             
